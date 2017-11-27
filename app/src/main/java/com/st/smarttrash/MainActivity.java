@@ -1,15 +1,9 @@
 package com.st.smarttrash;
 
-import android.content.Intent;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.StateListDrawable;
-import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
+import android.view.Menu;
+import android.view.MenuItem;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -18,34 +12,34 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(com.st.smarttrash.R.layout.activity_main);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, TrashFragment.getInstance())
+                    .add(com.st.smarttrash.R.id.container, coinFragment.getInstance())
                     .commit();
         }
 
-        if(getSharedPreferences("chave", 0).getAll().isEmpty()){
-            startActivity(new Intent(MainActivity.this, InsertKey.class));
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(com.st.smarttrash.R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == com.st.smarttrash.R.id.action_settings) {
+            coinFragment.getInstance().updateStatus();
         }
 
-        Button btn_key = (Button) findViewById(R.id.insert_key);
-
-        btn_key.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, InsertKey.class));
-            }
-        });
-
-        Button btn_refresh = (Button) findViewById(R.id.refresh);
-
-        btn_refresh.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                TrashFragment.getInstance().updateStatus();
-            }
-        });
-
+        return super.onOptionsItemSelected(item);
     }
+
 }

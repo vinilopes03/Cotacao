@@ -3,14 +3,85 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:paddingLeft="64dp"
-    android:paddingRight="64dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
-    tools:context="TrashFragment">
+    tools:context=".coinFragment">
     <ListView
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="100dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/list_view_trash">
     </ListView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorBackground"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:text="Ƀ 1.00"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/textColor2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:text="Bitcoin"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="180dp"
+        android:textColor="@color/textColor2"/>
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="280dp"
+        android:background="@color/colorPrimary"
+        android:text="change"
+        android:textColor="@color/textColor"
+        />
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_marginTop="-105dp"
+        android:layout_marginLeft="90dp"
+        android:src="@drawable/bit_draw"/>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="-5dp"
+        android:src="@drawable/usa_draw" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="225dp"
+        android:src="@drawable/gbp_draw" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="350dp"
+        android:src="@drawable/union_draw" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/plus_draw"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end|bottom" />
 </FrameLayout>
