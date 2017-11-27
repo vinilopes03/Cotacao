@@ -1,1 +1,1 @@
-# Cotacao
+# smart-trash
