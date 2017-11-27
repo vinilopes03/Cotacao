@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">MyCoin</string>
     <string name="action_settings">Refresh</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="nova_moeda">Nova Moeda</string>
 </resources>
