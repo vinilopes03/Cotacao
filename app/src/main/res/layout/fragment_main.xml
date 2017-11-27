@@ -76,12 +76,4 @@
         android:layout_marginTop="350dp"
         android:src="@drawable/union_draw" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:src="@drawable/plus_draw"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_gravity="end|bottom" />
 </FrameLayout>

@@ -18,6 +18,10 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".addCoin"
+            android:theme="@style/AppTheme">
+
+        </activity>
     </application>
 
 </manifest>

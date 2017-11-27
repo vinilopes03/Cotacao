@@ -1,9 +1,12 @@
 package com.st.smarttrash;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -18,6 +21,17 @@ public class MainActivity extends AppCompatActivity {
                     .add(com.st.smarttrash.R.id.container, coinFragment.getInstance())
                     .commit();
         }
+
+
+        FloatingActionButton button = (FloatingActionButton) findViewById(R.id.button_coin);
+
+
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,addCoin.class));
+            }
+        });
 
     }
     @Override
@@ -41,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 
 
 }
