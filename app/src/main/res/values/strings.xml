@@ -2,5 +2,13 @@
     <string name="app_name">MyCoin</string>
     <string name="action_settings">Refresh</string>
     <string name="confirmar">Confirmar</string>
-    <string name="nova_moeda">Nova Moeda</string>
+    <string name="nova_moeda">Nova moeda</string>
+
+    <string-array name="brew_array">
+        <item>BRL - Real Brasileiro</item>
+        <item>ARS - Argentine Peso</item>
+        <item>CAD - Canadian dollar</item>
+        <item>AUD - Australian dollar</item>
+    </string-array>
+
 </resources>

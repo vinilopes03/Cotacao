@@ -34,15 +34,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="180dp"
         android:textColor="@color/textColor2"/>
-    <Button
-        android:layout_width="70dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="280dp"
-        android:background="@color/colorPrimary"
-        android:text="change"
-        android:textColor="@color/textColor"
-        />
+
 
     <ImageView
         android:layout_height="wrap_content"

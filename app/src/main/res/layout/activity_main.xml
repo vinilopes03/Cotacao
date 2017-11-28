@@ -17,4 +17,15 @@
         android:layout_alignParentRight="true"
         android:layout_gravity="end|bottom" />
 
+    <Button
+        android:id="@+id/button_change"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="280dp"
+        android:background="@color/colorPrimary"
+        android:text="change"
+        android:textColor="@color/textColor"
+        />
+
 </FrameLayout>

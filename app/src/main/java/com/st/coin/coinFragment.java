@@ -1,4 +1,4 @@
-package com.st.smarttrash;
+package com.st.coin;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -57,14 +57,14 @@ public class coinFragment extends android.support.v4.app.Fragment {
         coinAdapter =
                 new ArrayAdapter<String>(
                         getActivity(), // The current context (this activity)
-                        com.st.smarttrash.R.layout.list_item_coin, // The name of the layout ID.
-                        com.st.smarttrash.R.id.list_item_trash_textview, // The ID of the textview to populate.
+                        com.st.coin.R.layout.list_item_coin, // The name of the layout ID.
+                        com.st.coin.R.id.list_item_trash_textview, // The ID of the textview to populate.
                         trashData);
 
-        View rootView = inflater.inflate(com.st.smarttrash.R.layout.fragment_main, container, false);
+        View rootView = inflater.inflate(com.st.coin.R.layout.fragment_main, container, false);
 
         // Get a reference to the ListView, and attach this adapter to it.
-        ListView listView = (ListView) rootView.findViewById(com.st.smarttrash.R.id.list_view_trash);
+        ListView listView = (ListView) rootView.findViewById(com.st.coin.R.id.list_view_trash);
         listView.setAdapter(coinAdapter);
 
 

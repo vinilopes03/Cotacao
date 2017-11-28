@@ -1,4 +1,4 @@
-package com.st.smarttrash;
+package com.st.coin;
 
 import org.junit.Test;
 
