@@ -2,9 +2,9 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "26.0.2"
     defaultConfig {
-        applicationId "com.st.smarttrash"
+        applicationId "com.st.coin"
         minSdkVersion 17
         targetSdkVersion 25
         versionCode 1
@@ -17,10 +17,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    buildTypes.each{
-        it.buildConfigField('String', 'OPEN_KEY', '"VSHFMPZG2OY7JCE4"')
 
-    }
 }
 
 dependencies {

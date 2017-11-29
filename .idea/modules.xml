@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Cotacao.iml" filepath="$PROJECT_DIR$/Cotacao.iml" />
+      <module fileurl="file://C:\Users\vinic\Desktop\Projetos2\Cotacao\Cotacao.iml" filepath="C:\Users\vinic\Desktop\Projetos2\Cotacao\Cotacao.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\vinic\Desktop\Projetos2\Cotacao\app\app.iml" filepath="C:\Users\vinic\Desktop\Projetos2\Cotacao\app\app.iml" />
     </modules>
   </component>
 </project>
